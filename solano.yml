@@ -1,12 +1,11 @@
 # solano.yml configuration file for Solano CI https://www.solanolabs.com/
 
 # http://docs.solanolabs.com/ConfiguringLanguage/php/
-# Test libraries and tools (like guzzle) on various language versions
 php:
-  version: 
-    SPLIT:
-      - '7.0'
-      - '5.6'
+  version: '7.0' # Laravel requires PHP 5.6 or above
+memcache: true # Enable memcached
+redis:
+  version: '3.0.2' # Enable redis
   
 # Automatically run PHPUnit tests in parallel using solano-phpunit test runner
 tests:
@@ -28,4 +27,3 @@ cache:
     - composer.lock
   save_paths:
     - vendor
-  per_profile: true  # PHP versions install different dependencies

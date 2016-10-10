@@ -2,7 +2,7 @@
 
 # http://docs.solanolabs.com/ConfiguringLanguage/php/
 php:
-  version: '7.0' # Laravel requires PHP 5.6 or above
+  version: '5.6' # Laravel requires PHP 5.6 or above
 memcache: true # Enable memcached
 redis:
   version: '3.0.2' # Enable redis
